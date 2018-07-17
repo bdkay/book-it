@@ -8,13 +8,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bdkay/bookIt.git"
+    "url": "git+https://github.com/bdkay/book-it.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bdkay/bookIt/issues"
+    "url": "https://github.com/bdkay/book-it/issues"
   },
-  "homepage": "https://github.com/bdkay/bookIt#readme"
+  "homepage": "https://github.com/bdkay/book-it#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "webpack": "^4.16.1"
+  }
 }
