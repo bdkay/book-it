@@ -1,14 +1,25 @@
 // Mini Node Server
 
-// http comes with node
 const http = require('http');
 const fs = require('fs');
+const express = require('express');
 
-const server = http.createServer();
+// const server = http.createServer();
+//
+// server.on('request', (req, res) => {
+//   // Write and end on the same line with .end
+//   res.end(fs.readFileSync(__dirname + '/../client/index.html'));
+// });
+//
+// server.listen(8080);
 
-server.on('request', (req, res) => {
-  // Write and end on the same line with .end
-  res.end(fs.readFileSync(__dirname + '/../client/index.html'));
-});
+const app = express();
 
-server.listen(8080);
+app.use(express.static('client'));
+
+// app.get('/', (req, res) => {
+//
+// });
+
+// App is a wrapper around our server object
+app.listen(8080);
