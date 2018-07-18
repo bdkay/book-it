@@ -1,3 +1,5 @@
+import BookList from './BookList';
+
 // Presentational
 
 // const App = () => {
@@ -12,7 +14,7 @@ class App extends React.Component {
   state = { answer: 42 };
   render(){
     return (
-      <h2>Hello {this.state.answer}</h2>
+      <BookList />
     );
   }
 }

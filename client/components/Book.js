@@ -4,4 +4,4 @@ const Book = (props) => {
   );
 };
 
-export default BookList;
+export default Book;
