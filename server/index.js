@@ -16,10 +16,17 @@ const express = require('express');
 const app = express();
 
 app.use(express.static('client'));
+app.set('view engine', 'ejs');
+
+app.get('/', (req, res) => {
+  res.render('index', {
+    content: 'Hello EJS'
+  });
+});
 
 // app.get('/', (req, res) => {
 //
 // });
 
 // App is a wrapper around our server object
-app.listen(8080);
+app.listen(8080, () => console.log('Server is running'));
