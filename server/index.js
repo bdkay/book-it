@@ -1,4 +1,4 @@
-// Mini Node Server
+// Mounts Mini Node Server
 
 const http = require('http');
 const fs = require('fs');
