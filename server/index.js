@@ -18,9 +18,11 @@ const app = express();
 app.use(express.static('client'));
 app.set('view engine', 'ejs');
 
+import serverRender from './render';
+
 app.get('/', (req, res) => {
   res.render('index', {
-    content: 'Hello EJS'
+    content: serverRender()
   });
 });
 
